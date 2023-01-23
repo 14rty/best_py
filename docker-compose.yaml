@@ -1,9 +1,9 @@
 version: '3.9'
 services:
   api:
-    container_name: api_container
+    container_name: web_app
     build: .
-    image: 14rty/connect:latest 
+    image: 14rty/web-app:latest 
     ports:
     - 5432:5432
     depends_on:
