@@ -44,3 +44,6 @@ services:
     restart: on-failure
     depends_on:
       - postgres
+      
+      
+      
