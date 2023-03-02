@@ -29,7 +29,7 @@ def login():
                 login_user(medic, remember=remember_me)
                 flash('Вы успешно аутентифицировались.', 'success')
                 next = request.args.get('next')
-                return redirect(next or url_for('index'))
+                return render_template('auth/login.html')
         flash('Невозможно аутентифицироваться с указанным логином и паролем', 'danger')
     return render_template('auth/login.html')
 
