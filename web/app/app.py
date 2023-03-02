@@ -37,3 +37,5 @@ from models import Medic, Med, Checkup, Customer
 def index():
     return render_template('index.html')
 
+
+
