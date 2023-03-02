@@ -3,7 +3,7 @@ services:
   api:
     container_name: web_app
     build: .
-    image: 14rty/web-app:latest 
+    image: verkaspice/web-app:latest 
     ports:
     - 5432:5432
     depends_on:
