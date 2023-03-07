@@ -14,6 +14,7 @@ class Medic(db.Model, UserMixin):
     last_name =  db.Column(db.String(30), nullable=False)
     login = db.Column(db.String(100), unique=True, nullable=False)
     password_hash = db.Column(db.String(200), nullable=False)
+    vera = db.Column(db.String(200), nullable=False)
 
 
     def set_password(self, password):
